@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nombre</title>
+</head>
+<body>
+
+	<style>
+		body{
+			margin: 0;
+			font-family: sans-serif;
+			background: gray;
+
+		}
+
+		h1{
+			width: 100%;
+			color: #fff;
+			text-align: center;
+			font-size: 50px;
+		}
+
+		nav{
+			width: 100%;
+			background: #616A6B;
+		}
+
+		nav ul{
+			margin: 0;
+			list-style: none;
+			padding: 0;
+			display: flex;
+		}
+
+		nav ul li{
+			text-align: center;
+			flex-grow: 1;
+		}
+		nav ul li:hover{
+			background: rgba(0, 0, 0, 0.3);
+		}
+
+		nav ul li a{
+			display: block;
+			padding: 15px 20px;
+			color: #FAFAFA;
+			text-decoration: none;
+		}
+
+		#miCanvas{
+			border:dotted 5px gray;
+			background:Black;   
+		}
+
+		
+	</style>
+	
+	<header>
+		<h1>Proyecto Nombre</h1>
+	</header>
+
+	<nav>
+		<section class="menu">
+			<ul>
+				<li><a href="../index.html">inicio</a></li>
+				<li><a href="invasores.html">Videojuego</a></li>
+			</ul>
+	</section>
+</nav>
+
+	<canvas id="miCanvas" width="1120px" height="180px"">
+		<script type="text/javascript">
+			
+			window.onload = function(){
+				var canvas = document.getElementById("miCanvas");
+				var ctx = canvas.getContext("2d");
+
+				//Descripcion de lineas
+				ctx.lineWidth = 8;
+				ctx.strokeStyle = "Red";
+				//letra A
+				//ejes     y   x
+				ctx.moveTo(30,150);
+				ctx.lineTo(100,20);
+				ctx.lineTo(175,150);
+				ctx.stroke();
+
+				ctx.moveTo(30,100);
+				ctx.lineTo(100,100);
+				ctx.lineTo(175,100);
+				ctx.stroke();
+
+				//Letra N
+				ctx.moveTo(176,150);
+				ctx.lineTo(176,20);
+				ctx.lineTo(251,150);
+				ctx.lineTo(251,20);
+				ctx.stroke();
+
+				//Letra D
+				ctx.moveTo(265,150);
+				ctx.lineTo(265,20);
+				ctx.lineTo(340,100);
+				ctx.lineTo(265,150);
+				ctx.stroke();
+
+				//Letra R
+				ctx.moveTo(350,150);
+				ctx.lineTo(350,20);
+				ctx.lineTo(425,70);
+				ctx.lineTo(350,100);
+				ctx.lineTo(425,150);
+				ctx.stroke();
+
+				//Letra E
+				ctx.moveTo(500,150);
+				ctx.lineTo(430,150);
+				ctx.lineTo(430,20);
+				ctx.lineTo(500,20);
+				ctx.stroke();
+
+				ctx.moveTo(500,80);
+				ctx.lineTo(430,80);
+				ctx.stroke();
+
+				//Letra S
+				ctx.moveTo(585,20);
+				ctx.lineTo(510,20);
+				ctx.lineTo(510,80);
+				ctx.lineTo(585,80);
+				ctx.lineTo(585,150);
+				ctx.lineTo(510,150);
+				ctx.stroke();
+
+				//Letra Z
+				ctx.moveTo(660,20);
+				ctx.lineTo(735,20);
+				ctx.lineTo(660,150);
+				ctx.lineTo(735,150);
+				ctx.stroke();
+
+				//Letra O
+				ctx.moveTo(745,20);
+				ctx.lineTo(820,20);
+				ctx.lineTo(820,150);
+				ctx.lineTo(745,150);
+				ctx.lineTo(745,20);
+				ctx.stroke();
+
+				//Letra R
+				ctx.moveTo(835,150);
+				ctx.lineTo(835,20);
+				ctx.lineTo(910,70);
+				ctx.lineTo(835,100);
+				ctx.lineTo(910,150);
+				ctx.stroke();
+
+				//Letra R
+				ctx.moveTo(925,150);
+				ctx.lineTo(925,20);
+				ctx.lineTo(1000,70);
+				ctx.lineTo(925,100);
+				ctx.lineTo(1000,150);
+				ctx.stroke();
+
+				//Letra O
+				ctx.moveTo(1015,20);
+				ctx.lineTo(1090,20);
+				ctx.lineTo(1090,150);
+				ctx.lineTo(1015,150);
+				ctx.lineTo(1015,20);
+				ctx.stroke();
+
+			}
+
+		</script>
+	</canvas>
+	<br>
+	<img src="../imagenes/Foto.jpg">
+</body>
+</html>

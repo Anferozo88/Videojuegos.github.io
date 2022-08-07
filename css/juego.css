@@ -1,0 +1,64 @@
+body{
+	margin: 0;
+	background-image: url(../imagenes/Fondo02.jpg);
+	background-repeat: no-repeat;
+	font-family: sans-serif;	
+}
+
+header{
+	width: 100%;
+	background: #de7500;
+	text-align: center;
+	color: #FAFAFA;
+	font-size: 40px;
+}
+
+nav{
+	width: 100%;
+	background: #b65101;
+}
+
+nav label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border-right: 1px solid #040404;
+}
+
+nav label:hover{
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+nav ul{
+margin: 0;
+list-style: none;
+padding: 0;
+display: flex;
+}
+
+nav ul li{
+	text-align: center;
+	flex-grow: 1;
+}
+
+nav ul li:hover{
+	background: rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a{
+	display: block;
+	padding: 15px 20px;
+	color: #FAFAFA;
+	text-decoration: none;
+}
+
+section{
+	display: block;
+}
+
+#miCanvas{
+    border:dotted 4px red;
+    background-image: url(../imagenes/Fondo03.jpg);   
+}
